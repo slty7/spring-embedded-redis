@@ -24,11 +24,14 @@ public interface ExecutableProvider {
     String PROPERTY_EXECUTABLE_LOCATION = "embedded.redis.executable";
 
     URI
-        REDIS_7_2_MACOSX_14_SONOMA_HANKCP = URI.create("https://github.com/codemonstur/embedded-redis/raw/master/src/main/binaries/redis-server-7.2-darwin-arm64"),
+        REDIS_7_2_MACOSX_14_SONOMA_HANKCP = URI.create("https://github.com/slty7/spring-embedded-redis/blob/master/src/mainbinaries/redis-server-7.2-darwin-arm64"),
         // Downloaded from: https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v6.jammy.x86_64.tar.gz
-        REDIS_7_2_LINUX_JAMMY_X86_64 = URI.create("https://github.com/codemonstur/embedded-redis/raw/master/src/main/binaries/redis-stack-server-7.2.0-v6.jammy.x86_64"),
+        REDIS_7_2_LINUX_JAMMY_X86_64 = URI.create("https://github.com/slty7/spring-embedded-redis/blob/master/src/main/binaries/redis-stack-server-7.2.0-v6.jammy.x86_64"),
         // Downloaded from: https://packages.redis.io/redis-stack/redis-stack-server-7.2.0-v6.jammy.arm64.tar.gz
-        REDIS_7_2_LINUX_JAMMY_ARM_64 = URI.create("https://github.com/codemonstur/embedded-redis/raw/master/src/main/binaries/redis-stack-server-7.2.0-v6.jammy.arm64");
+        REDIS_7_2_LINUX_JAMMY_ARM_64 = URI.create("https://github.com/slty7/spring-embedded-redis/blob/master/src/main/main/binaries/redis-stack-server-7.2.0-v6.jammy.arm64"),
+       //Download form: https://github.com/zkteco-home/redis-windows/blob/master/redis-server.exe
+       REDIS_7_2_WINDOWS_X86_64 = URI.create("https://github.com/slty7/spring-embedded-redis/blob/master/src/main/binaries/redis-server-7.2.5-windows-amd64.exe");
+
 
     File get() throws IOException;
 
